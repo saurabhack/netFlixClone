@@ -4,9 +4,9 @@ function Nav(){
     const [show,setShow]=useState(false)
     const transistionNavBar=()=>{
         if(window.scrollY > 100){
-            handleShow(true)
+            setShow(true)
         }else{
-            handleShow(false)
+            setShow(false)
         }
     }
     useEffect(()=>{
